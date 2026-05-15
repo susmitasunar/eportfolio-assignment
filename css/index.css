@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --page-background-color: #000F21;
+    --heading-color: #ADC6FF;
+    --neutral-color: #64748B;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+
+
+
+body{
+    background-color: var(--page-background-color);
+    font-family: "Montserrat", sans-serif;
+}
+
+/* header part start  */
+
+.site-header{
+    width: 100%;
+    height: 70px;
+    border-bottom: 0.5px solid var(--neutral-color);
+    box-shadow: 1px 1px 20px rgba(0,0,0,0.7);
+}
+
+.container{
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container h1{
+    color: var(--heading-color);
+}
+
+.menu-items{
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: var(--neutral-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+}
+
+.menu-item a:hover{
+    color: var(--heading-color);
+    border-bottom: 1.5px solid var(--heading-color);
+}
+
+.cta button{
+    border: none;
+    outline: none;
+    background-color: var(--heading-color);
+    padding: 12px 30px;
+    border-radius: 20px;
+    color: var(--page-background-color);
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.cta button:hover{
+    background-color: #a1bcfb;
+}
+
+/* header part end  */
+
+/* hero section part start */
+
+main{
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.hero-section{
+    height: calc(100vh - 70px);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-section_content{
+    height: 500px;
+    background-color: yellow;
+    flex: 5;
+
+}
+
+.hero-section_image{
+    height: 600px;
+    flex: 4;
+    border: 1px solid var(--neutral-color);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.image-container img{
+    height: 100%;
+    width: 100%;
+}
+
+/* hero section part end  */
+
+
+
