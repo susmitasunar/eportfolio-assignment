@@ -1,0 +1,12 @@
+to add the files:
+git add .
+
+to commit 
+git commit -m "message"
+
+to push
+git push
+
+
+if new project:
+
